@@ -1,0 +1,161 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+#calculator{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container{
+    width: 450px;
+    height: 800px;
+    background-color: #fdf6d3;
+    box-shadow: 3px 5px 5px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 20px;
+    border-radius: 4rem;
+}
+
+/* circle */
+ul.circle {
+    display: flex;
+    gap: 1rem;
+    align-self: flex-start;
+    margin-left: 1rem;
+}
+ul.circle li:nth-child(1)>a {background-color: rgb(250, 100, 46); }
+ul.circle li:nth-child(2)>a {background-color: gold; }
+ul.circle li:nth-child(3)>a {background-color: rgb(202, 249, 133); }
+
+ul.circle li a:active {
+    background-color: #a3a3a3;
+}
+ul.circle a {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+}
+
+/* display */
+.content{
+    width: 400px;
+    height: 200px;
+    background-color: #fffbfb;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+span{
+    font: 700 34px Arial;
+    padding: 1rem;
+    height: 200px;
+    color: #5c5c5c;
+    text-align: right;
+    overflow-wrap: break-word;
+    overflow-y: auto
+}  
+
+/*  button */
+#button{
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    gap: .5rem;
+}
+#button .btn{
+    width: 100%;
+    height: 100%;
+    gap: .5rem;
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 1px solid black; */
+    border-bottom: none;    
+} 
+#button li{
+    flex: 1;
+}
+#button .btn li:last-child{
+    border-right: none;
+}
+.btn button {
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+.btn:nth-child(1) button {
+    background-color: #fce4ed;
+}
+.btn:nth-child(2) button{
+    background-color: #fceebd
+}
+.btn:nth-child(3) button{
+    background-color: #e7cae8
+}
+.btn:nth-child(4) button{
+    background-color: #d0e1bd
+}
+.btn:nth-child(5) button{
+    background-color: #daeffc
+}
+
+#button .zero{
+    flex: 2;
+}
+#button .zero button{
+    border-radius: 3rem;
+}
+
+button{
+    all: unset;
+    width: 100%;
+    height: 100%;
+    text-align: center; 
+    cursor: pointer;
+    font-size: 24px;
+    color: #5c5c5c;
+    background-color: #f1f1f1;
+    border-radius: 50%;
+}
+
+
+/* CSS mouseEvent  */
+/* #button button:hover {
+    background-color:  #f0c98b; 
+}
+#button button:active {
+    background-color:  #fcdf6d;
+    transform: scale(0.93);
+    font-size: 26px;
+    font-weight: bolder;
+    text-shadow:3px 3px 5px rgba(0,0,0,0.2);
+} */
+
+/* javascript mouseEvent */
+#button .hover{
+    background-color: #ffe57f;
+} 
+#button .active{
+    background-color: #fcdf6d;
+    transform: scale(0.93);
+    box-sizing: border-box;
+    font-size: 26px;
+    font-weight: bolder;
+    text-shadow:3px 3px 5px rgba(0,0,0,0.2);
+}
